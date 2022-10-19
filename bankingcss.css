@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    background-color: #290522;
+    position: block;
+    color: aliceblue;
+    padding: 20px;
+}
+
+nav h1 {
+    color: aliceblue;
+    font-size: 45px;
+}
+
+nav a {
+    color: rgb(58, 167, 58);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    text-underline-offset: 1;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.main-block {
+    display: flex;
+    margin: 30px;
+    width: 90%;
+
+}
+
+.main-block .sub-block {
+    width: 50%;
+    background-color: #290522;
+    padding: 20px;
+    color: aliceblue;
+    margin-left: 70px;
+}
+
+.main-block .sub-block img {
+    margin: 10px;
+    border-radius: 10px;
+    width: 90%;
+    height: 30vh
+}
+
+.main-block .sub-block p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-block .sub-block a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+
+    font-size: 16px;
+    background-color: rgb(58, 167, 58);
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-block .sub-block a:hover {
+    font-size: 18px;
+
+
+}
+
+/* Clearfix (clear floats) */
+.main-block::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.transfer-box {
+    width: 40%;
+    background-color: #290522;
+    color: aliceblue;
+    text-align: center;
+
+    min-height: 40vh;
+}
+
+.transfer-box button {
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+
+    font-size: 16px;
+    background-color: rgb(58, 167, 58);
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table-data {
+    width: 70%;
+    background-color: #290522;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 40px;
+}
+
+.table-data .tablecontent {
+    height: 4vh;
+    margin: 20px;
+    padding: 20px;
+    background: transparent;
+    border-bottom: 1px solid white;
+
+}
+
+td {
+    font-size: 18px;
+    height: 6vh;
+    text-align: center;
+    border-bottom: 1px solid rgb(58, 167, 58);
+}
+
+thead {
+    background-color: rgb(58, 167, 58);
+    color: #290522;
+    height: 8vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-title {
+    color: #290522;
+    font-size: 40px;
+    font-weight: 600;
+
+
+}
+
+.btn-success {
+    color: #290522;
+    border-radius: 4px;
+
+}

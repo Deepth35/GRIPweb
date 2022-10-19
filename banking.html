@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="bankingcss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loader()">
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+ <nav>
+   <center><h1>Spark FounDation</h1></center>
+   <br><br>
+   <center>
+   <a href="banking.html">Home</a>
+   <a href="viewc.html">View Customers</a>
+   <a href="transfer.html">Transfer </a>
+   </center>
+   <br>
+   </nav><br>
+  
+  <div class="main-block">
+ 
+   
+   <div class="sub-block">
+   <center><h2>View Customers</h2></center>
+   <img src="customer.png">
+   <p>Here you can check the customer details </p><br><br><br>
+   <center><a href="viewc.html" id="customer">View customer</a></center>
+ <br>
+   </div>
+   <div class="sub-block">
+   <center><h2>Transfor</h2></center>
+   <center><img src="transaction.jpg"></center>
+   <p>Here you can Transfor Money to any other customer</p><br><br>
+   <center><a href="transfer.html" id="transaction">Transfer</a></center><br>
+   </div>
+   
+  
+ 
+</body>
+<!-- spalsh screen js -->
+<script>
+  var preloader = document.getElementById("loading");
+  function loader() {
+    preloader.style.display = 'none';
+  }
+</script>
+
+<script src="bjs.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+<!-- aos data  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 700,
+  });
+</script>
+
+</html>
